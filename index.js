@@ -8,10 +8,15 @@ function increment() {
 }
 
 function save() {
-    let countStr += count + " - "
-    saveEl.textContent=countStr
+    let countStr = count + " - "
+    saveEl.textContent+=countStr
     countEl.textContent = 0
     count = 0
 }
 
+const buttonSave = document.getElementById("save-btn");
+const buttonInc = document.getElementById("increment-btn");
+
+buttonInc.addEventListener("click", increment);
+buttonSave.addEventListener("click", save);
 
