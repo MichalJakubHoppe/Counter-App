@@ -8,10 +8,10 @@ function increment() {
 }
 
 function save() {
-    let countStr = count + " - "
-    saveEl.textContenttStr
+    let countStr += count + " - "
+    saveEl.textContent=countStr
     countEl.textContent = 0
     count = 0
 }
 
-console.log("Let's count people on the subway!")
+
